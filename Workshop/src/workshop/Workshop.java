@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * TODO: Utöka programmet så att du kan välja ytterligare en Shape
+ * TODO: Utöka programmet så att du kan välja ytterligare en färg
+ * TODO: Utöka programmet så att du kan sätta x och y-koordinater där din Shape ritas ut
+ * TODO: Utöka programmet så att du kan din Shape ritas ut på en random position
+ * TODO: Snygga till kodstrukturen, bryt ut till metoder osv.
  */
 package workshop;
 
