@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Animal extends Thread {
+public abstract class Animal {
     // TODO: Extend thread and override the run method
     // TODO: In the run method, try to eat and drink every 10 seconds
     // TODO: Generate getters and setters for the following: 
