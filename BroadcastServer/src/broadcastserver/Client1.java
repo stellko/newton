@@ -1,20 +1,19 @@
-package simplesocketexample;
+package broadcastserver;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 /**
  * 
  * @author DanielB
  *
- *	Denna klass kopplar upp sig till en tidsserver för att hämta den korrekta tiden just nu, vilket
- *	är något som görs i vissa program och applikationer.
- *	
- *	Genom att används sockets där webbadress och port anges, samt skapa en Scanner-ström som läser av denna
- *	är det möjligt att hämta tiden över nätet. Det fungerar utmärkt att använda andra adresser också (så länge de har en server igång). 
+ *	Detta ‰r klientklassen till ServerChatProgram, denna innehÂller bÂde en skrivarklass och l‰sarklass.
+ *	Kan anv‰ndas fˆr att koppla upp till alla socket-serverar som skriver ut information.
  */
-public class SimpleSocketExample {
+public class Client1 {
+	
 	public static void main(String[] args){
 //		Adress och portnummer behövs alltid för att skapa anslutning/använda sockets.
 		String adress = "localhost";
@@ -27,7 +26,7 @@ public class SimpleSocketExample {
 			InputStream stream  = socket.getInputStream();
 //			Sedan öppnas en ström för att läsa det man får till datorn. 
 			Scanner reader = new Scanner(stream);
-//			Så länge som det finns en ny rad att hämta kommer denna skrivas ut, vilket endast kommer hända en gång i detta exempel.
+//			Så länge som det finns en ny rad att hämta kommer denna skrivas ut
 			while(reader.hasNextLine()) {
 //				nextLine kastar exception men borde inte hända då vi kollar om det finns en ny rad varje gång, innan de läses.
 				System.out.println(reader.nextLine());
